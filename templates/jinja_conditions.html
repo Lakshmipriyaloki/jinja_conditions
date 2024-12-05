@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    
+        <h1>jinja_conditions</h1>
+       <!--
+         {% if num > 0 %}
+        <h1>"The number is positive" </h1>  
+
+        {% endif %}
+        <h1>if_else</h1>
+    {% if num > 18 %}
+        <h1> {{name}} is eligible to vote </h1>   
+    {% else %}
+        <h1>{{name}} is not eligible to vote </h1>
+        {% endif %}
+--> 
+        {% if a > b %}
+            {% if a > c %}   #1,5,3
+                {{'a is big'}}
+            {% else  %}
+                {{'c is big'}}
+            {% endif %}
+        {% else %}
+         {% if b > c %}
+            {{ 'b is big' }}
+         {% else %}
+           {{' c is big'}}
+         {% endif %}
+        {% endif %}
+
+
+
+
+
+
+
+
+    <h1>for loop</h1>
+    {% for i in name %}
+        <marquee behavior="" direction="scrolling"><h1>{{i}}</h1></marquee>
+    {% endfor %}
+   
+    </center>
+    
+</body>
+</html>
